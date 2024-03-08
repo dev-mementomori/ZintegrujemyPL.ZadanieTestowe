@@ -1,10 +1,11 @@
-Zbuduj cały projekt.
+Zbuduj cały projekt:
 Zainstaluj i skonfiguruj serwer SQL - zalecana wersja: SqlServer2016.
 Skonfiguruj plik appsettings.json. Ważne! Jeśli chcesz, aby pliki migracyjne były zapisane na dysku C, musisz uruchomić aplikację jako administrator.
 Migracje:
 
-Nowe migracje - Podczas uruchomienia projektu migracje są automatycznie wykonywane.
+Migracje:
 
+Nowe migracje - Podczas uruchomienia projektu migracje są automatycznie wykonywane.
 
 Cofanie migracji - migracje można cofnąć za pomocą polecenia:
 dotnet fm rollback -p [server-version] --connection="Server=[server];Database=[database];User Id=[username];Password=[password];TrustServerCertificate=True" --assembly="[assembly-path]"
@@ -22,7 +23,6 @@ Task DeleteOldAllData() - jest odpowiedzialy za usuwanie starych danych ze wszys
 Task GetInventoriesShippedWithin24h() - jest odpowiedzialny za pobieranie listy inventories, które są wysłane w ciągu ostatnich 24 godzin.
 Task GetProductsShippedWithin24h() - jest odpowiedzialny za pobieranie listy produktów, które są wysłane w ciągu ostatnich 24 godzin i nie są kablami, na podstawie listy inventories.
 Task InsertNewData() - jest odpowiedzialy za wstawianie nowych danych do odpowiednich repozytoriów.
-
 
 IntegrationSettingsValidator:
 Metoda Validate() - Sprawdza plik konfiguracyjny appsettings dla modelu IntegrationSettings.
