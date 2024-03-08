@@ -20,8 +20,8 @@ Task Integrate() - Rozpoczyna proces integracji.
 Task DownloadAndStoreFiles() - Pobiera i zapisuje pliki do integracji.
 Task ProcessData() - jest odpowiedzialy za przetwarzanie danych. Wywołuje metody do pobierania danych, usuwania starych danych i wstawiania nowych danych.
 Task DeleteOldAllData() - jest odpowiedzialy za usuwanie starych danych ze wszystkich repozytoriów.
-Task GetInventoriesShippedWithin24h() - jest odpowiedzialny za pobieranie listy inventories, które są wysłane w ciągu ostatnich 24 godzin.
-Task GetProductsShippedWithin24h() - jest odpowiedzialny za pobieranie listy produktów, które są wysłane w ciągu ostatnich 24 godzin i nie są kablami, na podstawie listy inventories.
+Task GetInventoriesShippedWithin24h() - jest odpowiedzialny za pobieranie listy inventories, które są wysłane w przeciągu 24 godzin.
+Task GetProductsShippedWithin24h() - jest odpowiedzialny za pobieranie listy produktów, które są wysłane w przeciągu 24 godzin i nie są kablami, na podstawie listy inventories.
 Task InsertNewData() - jest odpowiedzialy za wstawianie nowych danych do odpowiednich repozytoriów.
 
 IntegrationSettingsValidator:
